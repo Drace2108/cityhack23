@@ -35,6 +35,7 @@ export default class MyCardTable extends React.Component {
             className="h-12 w-12 bg-white rounded-full border"
             alt="..."
           ></img>{" "} */}
+          <a href="http://localhost:3000/admin/company_page">
           <span
             className={
               "ml-3 font-bold " +
@@ -43,6 +44,7 @@ export default class MyCardTable extends React.Component {
           >
             {company.name}
           </span>
+          </a>
         </th>
         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
           {company.ticker}
