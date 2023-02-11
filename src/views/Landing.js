@@ -31,8 +31,7 @@ export default function Landing() {
                     Begin your journey with us.
                   </h1>
                   <p className="mt-4 text-xl text-blueGray-200">
-                    Sustainability-Focused Investment Data Aggregator (we prefer
-                    SFIDA) is the ultimate tool to collect useful data and make
+                    GreenFin is the ultimate tool to collect useful data and make
                     information accessible. With us investing becomes easy as
                     pie.
                   </p>
@@ -136,9 +135,9 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Alnur Kabdolla</h5>
+                    <h5 className="text-xl font-bold">Arman Zhumakhan</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Front-end Developer
+                      Team Leader
                     </p>
                     <div className="mt-6">
                       <button
@@ -173,9 +172,9 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Arman Zhumakhan</h5>
+                    <h5 className="text-xl font-bold">Adilzhan Narik</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Back-end Developer
+                      Developer
                     </p>
                     <div className="mt-6">
                       <button
@@ -204,9 +203,9 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Alibi Melis</h5>
+                    <h5 className="text-xl font-bold">Ralif Rakhmatullin</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Front-end Developer
+                      Developer
                     </p>
                     <div className="mt-6">
                       <button
@@ -239,9 +238,9 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Azamat Yelmagambetov</h5>
+                    <h5 className="text-xl font-bold">Nurgazy Salanov</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Back-end Developer
+                      Developer
                     </p>
                     <div className="mt-6">
                       <button
@@ -276,9 +275,9 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Daniyar Agaltsov</h5>
+                    <h5 className="text-xl font-bold">Daulet Igazin</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Back-end Developer
+                      Developer
                     </p>
                     <div className="mt-6">
                       <button
