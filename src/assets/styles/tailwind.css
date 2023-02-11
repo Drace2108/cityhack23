@@ -1091,6 +1091,11 @@ select {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 182, 193, var(--tw-bg-opacity));
+}
+
 .bg-pink-500 {
   --tw-bg-opacity: 1;
   background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
@@ -3094,5 +3099,21 @@ input[type="file"] {
   transition: transform 330ms ease-in-out;
 }
 
+.parent {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.child {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.epi {
+  padding-bottom: 15px;
+  font-weight: bold;
+}
 
 
+.report_result {
+  padding-bottom: 50px;
+}
