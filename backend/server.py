@@ -15,8 +15,9 @@ from pathlib import Path
 from file_scraper import parse_pdf
 from werkzeug.datastructures import FileStorage
 import datetime
-
+import logging
 import model
+logging.basicConfig(level=logging.DEBUG)
 
 def numMarketcap(x):
     try:
@@ -34,8 +35,8 @@ GENERATE_DIRECTORY = DATABASE_DIRECTORY / "generate_files"
 TEXT_DIRECTORY = DATABASE_DIRECTORY / 'text'
 
 @app.route('/uploadreport', methods=['POST'])
-
 def uploadreport():
+
     file = request.files['File']
     file_bin = file.read()    
     
@@ -50,7 +51,8 @@ def uploadreport():
 
     with open(TEXT_DIRECTORY / 'text.txt', 'w', encoding="utf-8") as f:
         f.write(text)
-    
+    logging.debug('saving text in text.txt')
+
     response = Response(json.dumps(1))
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
@@ -59,8 +61,9 @@ def uploadreport():
 def model_prediction():
 
    question = request.form.get('Question')
+   logging.debug(f'getting the question "{question}"')
    result = model.get_answer(question)
-   print(result)
+   logging.debug(f"result: {result}")
    response = Response(json.dumps(result))
    response.headers.add('Access-Control-Allow-Origin', '*')
    return response
@@ -79,7 +82,6 @@ def topNcompanies(count):
 
 @app.route("/companyPage/<tickername>")
 def companyPage(tickername):
-    
     company_info = si.get_company_info(tickername)
     company_info.loc['ticker','Value'] = tickername
     website_link = company_info.loc['website','Value']
