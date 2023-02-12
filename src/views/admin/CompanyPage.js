@@ -4,7 +4,6 @@ import axios from "axios";
 import { isMobile } from "react-device-detect";
 
 // components
-
 import { Oval } from "react-loader-spinner";
 import MyCardProfile from "components/MyCards/MyCardProfile.js";
 import MyKPICard from "../../components/MyCards/MyKPICard";
@@ -35,31 +34,71 @@ const apple_esg = {
 
 const test_stocks = [
   {
-    index: "2021-07",
-    close: 100,
+    index: "2023-02-03",
+    close: 154.50,
   },
   {
-    index: "2021-08",
-    close: 110,
+    index: "2023-02-06",
+    close: 151.73,
   },
   {
-    index: "2021-09",
-    close: 130,
+    index: "2023-02-07",
+    close: 154.65,
+  },
+  {
+    index: "2023-02-08",
+    close: 151.92,
+  },
+  {
+    index: "2023-02-09",
+    close: 150.87,
+  },
+  {
+    index: "2023-02-10",
+    close: 151.01,
   },
 ];
 
 const test_quarterly = [
   {
-    incomeBeforeTax: 1000000,
-    netIncome: 990000,
+    quarter: 'Q4-2022',
+    incomeBeforeTax: 117.15,
+    netIncome: 30.0,
   },
   {
-    incomeBeforeTax: 1000000,
-    netIncome: 950000,
+    quarter: 'Q3-2022',
+    incomeBeforeTax: 90.15,
+    netIncome: 20.72,
   },
   {
-    incomeBeforeTax: 1000000,
-    netIncome: 920000,
+    quarter: 'Q2-2022',
+    incomeBeforeTax: 82.96,
+    netIncome: 19.44,
+  },
+  {
+    quarter: 'Q1-2022',
+    incomeBeforeTax: 97.28,
+    netIncome: 25.01,
+  },
+  {
+    quarter: 'Q4-2021',
+    incomeBeforeTax: 123.94,
+    netIncome: 34.63,
+  },
+  {
+    quarter: 'Q3-2021',
+    incomeBeforeTax: 83.36,
+    netIncome: 20.55,
+  },
+  {
+    quarter: 'Q2-2021',
+    incomeBeforeTax: 81.43,
+    netIncome: 21.74,
+  },
+  {
+    quarter: 'Q1-2021',
+    incomeBeforeTax: 89.58,
+    netIncome: 23.63,
   },
 ];
 
@@ -67,32 +106,32 @@ export default class CompanyPage extends React.Component {
   constructor() {
     super();
     this.state = {
-      stocks: [],
-      quarterly: [],
+      stocks: test_stocks,
+      quarterly: test_quarterly,
     };
   }
 
-  fetchData() {
-    axios({ method: "GET", url: `/companyPage/AAPL` })
-      .then((res) => res.data)
-      .then((data) => {
-        this.setState({
-          stocks: data.price.slice(-36),
-          quarterly: data.quarterly,
-        });
-      })
-      .catch((e) => {
-        console.log(e);
-        this.setState({
-          quarterly: test_quarterly,
-          stocks: test_stocks,
-        });
-      });
-  }
+  // fetchData() {
+  //   axios({ method: "GET", url: `/companyPage/AAPL` })
+  //     .then((res) => res.data)
+  //     .then((data) => {
+  //       this.setState({
+  //         stocks: data.price.slice(-36),
+  //         quarterly: data.quarterly,
+  //       });
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //       this.setState({
+  //         quarterly: test_quarterly,
+  //         stocks: test_stocks,
+  //       });
+  //     });
+  // }
 
-  componentDidMount() {
-    this.fetchData();
-  }
+  // componentDidMount() {
+  //   this.fetchData();
+  // }
 
   render() {
     return !isMobile ? (
@@ -247,6 +286,7 @@ export default class CompanyPage extends React.Component {
                 <></>
               )}
             </div>
+          
             {/* <div className="w-full xl:w-12/12 mb-12 xl:mb-0 px-4">
                 <CardPageVisits />
               </div> */}
