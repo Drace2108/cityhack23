@@ -71,7 +71,7 @@ export default function MyInvestmentCard({ color = "light" }) {
                         <div className="flex flex-wrap">
                             <div className="w-full lg:w-4/12 px-4 py-5 lg:pt-8 pt-6 w-full md:w-4/12 px-4 text-center grow h-450-px" style={{paddingTop:0}}>
                                 
-                                <Link to="/admin/company_page">
+                                <Link to="/admin/investment_page">
                                 <InvestmentStartups
                                     statSubtitle="4 days left"
                                     statTitle="Biome Makers"
