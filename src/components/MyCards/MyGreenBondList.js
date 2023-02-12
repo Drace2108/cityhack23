@@ -232,9 +232,7 @@ export default class MyGreenBondList extends React.Component {
   render() {
     const color = this.props.color;
     const title = this.props.title ?? "Table";
-    const companies = this.props.items.length
-      ? this.props.items
-      : test_companies;
+    const companies = test_companies;
 
     return (
       <>
