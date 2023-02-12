@@ -196,7 +196,7 @@ export default class MyGreenBondList extends React.Component {
           {/* </a> */}
         </th>
         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-m whitespace-nowrap p-4">
-          <a href="http://localhost:3000/admin/greenbondlist">
+          <a href="http://localhost:3000/admin/greenbond">
           {company.ticker}
           </a>
         </td>

@@ -208,13 +208,34 @@ export default function Sidebar() {
                 >
                   <i
                     className={
-                      "fas fa-heart mr-2 text-sm " +
+                      "fas fa-coins mr-2 text-sm " +
                       (window.location.href.indexOf("/admin/investment") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
                   Investment
+                </Link>
+              </li>
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/admin/greenbondlist") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/admin/greenbondlist"
+                >
+                  <i
+                    className={
+                      "fas fa-money-bill mr-2 text-sm " +
+                      (window.location.href.indexOf("/admin/greenbondlist") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>{" "}
+                  Green Bonds
                 </Link>
               </li>
             </ul>
