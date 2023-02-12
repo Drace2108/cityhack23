@@ -7,7 +7,7 @@ export default function MyStocksCard(props) {
     var config = {
       type: "line",
       data: {
-        labels: prices.map(price => price.index.slice(0, 7)),
+        labels: prices.map(price => price.index),
         datasets: [
           {
             label: 'Stock Price',
