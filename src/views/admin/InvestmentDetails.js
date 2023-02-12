@@ -15,7 +15,7 @@ import MyStocksCard from "components/MyCards/MyStocksCard";
 import MyBarChart from "components/MyCards/MyBarChart";
 import MyInvestmentCardTable from "components/MyCards/MyInvestmentCardTable.js";
 
-export default class InvestmentDetails extends React.Component {
+export default class InvestmentDetails extends React.Component {    
 
   // fetchData() {
   //   axios({ method: "GET", url: `/companyPage/AAPL` })

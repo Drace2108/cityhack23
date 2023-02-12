@@ -25,7 +25,7 @@ export default function MyCardStats({
             </div>
             <div className="relative w-auto pl-4 flex-initial">
               <div >
-                <img src={statIcon} alt="stat icon"/> 
+                <img src={statIcon} alt="stat icon" style={{maxWidth:"70px"}}/> 
               </div>
             </div>
           </div>

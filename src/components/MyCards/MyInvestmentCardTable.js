@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import MyCardStats from "components/MyCards/MyCardStats.js";
 
-import usflag from "../../assets/img/united-states-2.png";
-import jpnflag from "../../assets/img/japan.png";
-import gbtflag from "../../assets/img/united-kingdom.png";
-import hkflag from "../../assets/img/hong-kong.png";
+import biomemakers from "../../assets/img/biomemakers.jpeg";
+import tree from "../../assets/img/plant-a-tree.png";
+import water from "../../assets/img/water.png";
+import gas from "../../assets/img/factory.png";
+import waste from "../../assets/img/waste-water.png";
 
 // components
 
@@ -52,7 +53,7 @@ export default function MyInvestmentCardTable({ color }) {
                         statPercent="72"
                         statPercentColor="text-emerald-500"
                         statDescripiron="trees saved locally"
-                        statIcon={usflag}
+                        statIcon={tree}
                       />
                     </div>
                     <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
@@ -63,7 +64,7 @@ export default function MyInvestmentCardTable({ color }) {
                         statPercent="37"
                         statPercentColor="text-red-500"
                         statDescripiron="than local companies"
-                        statIcon={hkflag}
+                        statIcon={water}
                         statIconColor="bg-orange-500"
                       />
                     </div>
@@ -75,7 +76,7 @@ export default function MyInvestmentCardTable({ color }) {
                         statPercent="83"
                         statPercentColor="text-red-500"
                         statDescripiron="by 2024"
-                        statIcon={jpnflag}
+                        statIcon={gas}
                         statIconColor="bg-pink-500"
                       />
                     </div>
@@ -87,7 +88,7 @@ export default function MyInvestmentCardTable({ color }) {
                         statPercent="50"
                         statPercentColor="text-red-500"
                         statDescripiron="by the end of 2023"
-                        statIcon={gbtflag}
+                        statIcon={waste}
                         statIconColor="bg-lightBlue-500"
                       />
                     </div>
@@ -140,7 +141,7 @@ export default function MyInvestmentCardTable({ color }) {
                   <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
                     <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-lightBlue-500">
                       <img
-                        src={require("assets/img/biomemakers.jpeg")}
+                        src={biomemakers}
                         className="w-full align-middle rounded-t-lg"
                         alt="Thumbnail"
                       />
