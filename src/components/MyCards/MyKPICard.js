@@ -11,7 +11,7 @@ export default class MyKPICard extends Component {
         <div className="relative flex flex-1 flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
           <div className="flex-auto p-4">
             <div className="flex flex-wrap">
-              <div className="relative w-full pr-4 max-w-full flex-grow flex-1">
+              <div className="relative w-half pr-4 max-w-full flex-grow flex-1">
                 <h4 className="text-blueGray-800 uppercase text-xs">{title}</h4>
                 <h1 className="font-semibold text-2xl text-blueGray-700">
                   {value}

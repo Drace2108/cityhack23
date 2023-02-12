@@ -1534,6 +1534,14 @@ select {
   height: auto;
 }
 
+.h-small{
+  height: 10%;
+}
+
+.h-half{
+  height: 50%;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1564,6 +1572,11 @@ select {
 
 .text-55 {
   font-size: 55rem;
+}
+
+.text-xxs {
+  font-size: 0.5rem;
+  line-height: 0.75rem;
 }
 
 .text-xs {
@@ -1900,6 +1913,10 @@ select {
   min-height: 75vh;
 }
 
+.max-h-30 {
+  max-height: 30%;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1970,6 +1987,10 @@ select {
   padding: 2rem;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2033,6 +2054,11 @@ select {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-max {
+  padding-left: 9rem;
+  padding-right: 9rem;
 }
 
 .py-16 {
@@ -2538,6 +2564,14 @@ select {
   width: 83.333333%;
 }
 
+.w-small{
+  width: 10%;
+}
+
+.w-half {
+  width: 40%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -2858,7 +2892,7 @@ select {
 }
 
 @media (min-width: 1024px) {
-  .lg\:bg-opacity-0 {
+  .lg\:bg-   opacity-0 {
     --tw-bg-opacity: 0;
   }
 
@@ -3003,6 +3037,10 @@ select {
     color: rgba(226, 232, 240, var(--tw-text-opacity));
   }
 
+  .lg\:h-3\/12 {
+    height: 25%;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
@@ -3108,6 +3146,14 @@ input[type="file"] {
   vertical-align: middle;
 }
 
+.inline-p {
+  padding-bottom: 20px;
+}
+
+.inline-c {
+  display: inline-block;
+}
+
 .epi {
   padding-bottom: 15px;
   font-weight: bold;
@@ -3116,4 +3162,19 @@ input[type="file"] {
 
 .report_result {
   padding-bottom: 50px;
+}
+
+.logo{
+  width: 10%;
+  height: 10%;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.gbButton {
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
 }

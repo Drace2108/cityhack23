@@ -14,6 +14,7 @@ import Upload from "views/admin/Upload.js";
 import Charity from "views/admin/Charity.js";
 import CompanyPage from "views/admin/CompanyPage.js";
 import MyDashboard from "views/admin/MyDashboard";
+import GreenBond from "views/admin/GreenBond.js";
 import Inbox from "views/admin/Inbox";
 
 class Admin extends React.Component {
@@ -32,6 +33,7 @@ class Admin extends React.Component {
               <Route path="/admin/company_page" exact component={CompanyPage} />
               <Route path="/admin/dashboard" exact component={MyDashboard} />
               <Route path="/admin/inbox" exact component={Inbox} />
+              <Route path="/admin/greenbond" exact component={GreenBond} />
               <Redirect from="/admin" to="/admin/dashboard" />
             </Switch>
             <FooterAdmin/>
