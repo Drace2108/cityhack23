@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MyNewsCard from "./MyNewsCard";
+const NEWS_API_KEY = "3649270f43904fb4a92dffd219643cb2";
 
 export default class MyNews extends Component {
   constructor() {
@@ -12,7 +13,7 @@ export default class MyNews extends Component {
   componentDidMount() {
     fetch(
       "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=" +
-        process.env.REACT_APP_NEWS_API_KEY
+        NEWS_API_KEY
     )
       .then((response) => response.json())
       .then((object) => object.articles)
@@ -28,6 +29,7 @@ export default class MyNews extends Component {
     for (let i = 0; i < limit; i++) {
       news.push(<MyNewsCard news={this.state.news[i]} key={i} />);
     }
+    console.log(news);
     return news;
   }
 

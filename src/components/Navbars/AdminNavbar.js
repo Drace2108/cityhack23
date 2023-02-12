@@ -7,6 +7,7 @@ export default function Navbar() {
   let url = window?.location?.href?.split('/');
   let pageName = url[url.length - 1];
   if (pageName === 'company_page') pageName = "Company Overview"
+  if (pageName === 'investment_page') pageName = "Investment"
 
   return (
     <>

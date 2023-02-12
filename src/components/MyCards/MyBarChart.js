@@ -7,15 +7,15 @@ export default function MyBarChart(props) {
     let config = {
       type: "bar",
       data: {
-        labels: ['Q1-2021', 'Q2-2021', 'Q3-2021', 'Q4-2021'],
+        labels: quarterly.map(q => q.quarter),
         datasets: [
           {
-            label: 'Income before Tax',
+            label: 'Revenue',
             fill: false,
             backgroundColor: "#4c51bf",
             borderColor: "#4c51bf",
             data: quarterly.map(q => q.incomeBeforeTax),
-            barThickness: 40,
+            barThickness: 20,
           },
           {
             label: 'Net Income',
@@ -23,7 +23,7 @@ export default function MyBarChart(props) {
             borderColor: "#ed64a6",
             data: quarterly.map(q => q.netIncome),
             fill: false,
-            barThickness: 40,
+            barThickness: 20,
           },
         ],
       },
@@ -71,8 +71,8 @@ export default function MyBarChart(props) {
             {
               display: true,
               scaleLabel: {
-                display: false,
-                labelString: "Value",
+                display: true,
+                labelString: "Billion $",
               },
               gridLines: {
                 borderDash: [2],

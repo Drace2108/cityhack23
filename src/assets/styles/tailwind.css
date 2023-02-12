@@ -3178,3 +3178,15 @@ input[type="file"] {
   background-color: blue;
   border-radius: 5px;
 }
+
+.investTextBlya{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  letter-spacing: -.5px;
+  text-align: center;
+  color: #383838;
+  text-transform: uppercase;
+  text-decoration-style: solid;
+  vertical-align: baseline;
+}

@@ -97,7 +97,7 @@ export default function InboxCardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-s whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={"https://media-exp1.licdn.com/dms/image/C4D03AQHqRRhVsnaziA/profile-displayphoto-shrink_400_400/0/1626063510328?e=1648684800&v=beta&t=590XHxIBmWSfEQNsYS0JIOQadgFoWBdJv-xaMVt4PbE"}
+                    src={require("assets/img/BillGates.jpeg")}
                     className="h-16 w-16 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -121,22 +121,22 @@ export default function InboxCardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src={require("assets/img/team-1-800x800.jpg").default}
+                      src={require("assets/img/team-1-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
                     ></img>
                     <img
-                      src={require("assets/img/team-2-800x800.jpg").default}
+                      src={require("assets/img/team-2-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-3-800x800.jpg").default}
+                      src={require("assets/img/team-3-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-4-470x470.png").default}
+                      src={require("assets/img/team-4-470x470.png")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
@@ -152,7 +152,7 @@ export default function InboxCardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-s whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={"https://media-exp1.licdn.com/dms/image/C5603AQHHUuOSlRVA1w/profile-displayphoto-shrink_400_400/0/1579726624860?e=1648684800&v=beta&t=s-OVoNpaubtyzHoQ8CsY6zs-xy7WfvPLc6WXGi7MWjk"}
+                    src={require("assets/img/SatyaNadella.jpeg")}
                     className="h-16 w-16 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -162,7 +162,7 @@ export default function InboxCardTable({ color }) {
                       +(color === "light" ? "text-blueGray-600" : "text-white")
                     }
                   >
-                    Satya Nadela
+                    Satya Nadella
                   </span>
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-lg whitespace-nowrap p-4">
@@ -175,22 +175,22 @@ export default function InboxCardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src={"https://media-exp1.licdn.com/dms/image/C5603AQHHUuOSlRVA1w/profile-displayphoto-shrink_400_400/0/1579726624860?e=1648684800&v=beta&t=s-OVoNpaubtyzHoQ8CsY6zs-xy7WfvPLc6WXGi7MWjk"}
+                      src={require("assets/img/team-1-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
                     ></img>
                     <img
-                      src={require("assets/img/team-2-800x800.jpg").default}
+                      src={require("assets/img/team-2-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-3-800x800.jpg").default}
+                      src={require("assets/img/team-3-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-4-470x470.png").default}
+                      src={require("assets/img/team-4-470x470.png")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
@@ -206,7 +206,7 @@ export default function InboxCardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-s whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={"https://media-exp1.licdn.com/dms/image/C4E03AQF2C6iUecWOnQ/profile-displayphoto-shrink_400_400/0/1517665058540?e=1648684800&v=beta&t=JAT5x13jbt8tQ70eDhEkyk9LE6VASOdFKCXlpZacDlg"}
+                    src={require("assets/img/BarackObama.jpeg")}
                     className="h-16 w-16 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -229,22 +229,22 @@ export default function InboxCardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src={"https://media-exp1.licdn.com/dms/image/C4D03AQHh6_Wth5f3rQ/profile-displayphoto-shrink_400_400/0/1625181962692?e=1648684800&v=beta&t=qHuWQZNixWo65Mdv_HI9lh9NEeD3Ql3ijDLcPv7p9t8"}
+                      src={require("assets/img/team-1-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
                     ></img>
                     <img
-                      src={require("assets/img/team-2-800x800.jpg").default}
+                      src={require("assets/img/team-2-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-3-800x800.jpg").default}
+                      src={require("assets/img/team-3-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-4-470x470.png").default}
+                      src={require("assets/img/team-4-470x470.png")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
@@ -260,7 +260,7 @@ export default function InboxCardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-s whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={"https://media-exp1.licdn.com/dms/image/C4D03AQHh6_Wth5f3rQ/profile-displayphoto-shrink_400_400/0/1625181962692?e=1648684800&v=beta&t=qHuWQZNixWo65Mdv_HI9lh9NEeD3Ql3ijDLcPv7p9t8"}
+                    src={require("assets/img/team-1-800x800.jpg")}
                     className="h-16 w-16 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -283,22 +283,22 @@ export default function InboxCardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src={"https://media-exp1.licdn.com/dms/image/C5603AQHHUuOSlRVA1w/profile-displayphoto-shrink_400_400/0/1579726624860?e=1648684800&v=beta&t=s-OVoNpaubtyzHoQ8CsY6zs-xy7WfvPLc6WXGi7MWjk"}
+                      src={require("assets/img/team-1-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
                     ></img>
                     <img
-                      src={require("assets/img/team-2-800x800.jpg").default}
+                      src={require("assets/img/team-2-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-3-800x800.jpg").default}
+                      src={require("assets/img/team-3-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-4-470x470.png").default}
+                      src={require("assets/img/team-4-470x470.png")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
@@ -314,7 +314,7 @@ export default function InboxCardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-s whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src={"https://media-exp1.licdn.com/dms/image/C4D03AQEALEmFtfBLWw/profile-displayphoto-shrink_400_400/0/1621447172514?e=1648684800&v=beta&t=R7EzeidlL1rdtXxsNPwe5eMV-xVY2yWhlinYDpC3J04"}
+                    src={require("assets/img/Shaquille.jpeg")}
                     className="h-16 w-16 bg-white rounded-full border"
                     alt="..."
                   ></img>{" "}
@@ -338,22 +338,22 @@ export default function InboxCardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src={"https://media-exp1.licdn.com/dms/image/C4D03AQHQWxxk8YKkXg/profile-displayphoto-shrink_400_400/0/1627466504251?e=1648684800&v=beta&t=OXoot5ac0FqLc9-JdJEKp5LvYN5_nkkCz57Vtb8duX0"}
+                      src={require("assets/img/team-1-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
                     ></img>
                     <img
-                      src={require("assets/img/team-2-800x800.jpg").default}
+                      src={require("assets/img/team-2-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-3-800x800.jpg").default}
+                      src={require("assets/img/team-3-800x800.jpg")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/team-4-470x470.png").default}
+                      src={require("assets/img/team-4-470x470.png")}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>

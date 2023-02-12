@@ -16,6 +16,9 @@ import CompanyPage from "views/admin/CompanyPage.js";
 import MyDashboard from "views/admin/MyDashboard";
 import GreenBond from "views/admin/GreenBond.js";
 import Inbox from "views/admin/Inbox";
+import Investment from "views/admin/Investment";
+import GreenBondList from "views/admin/GreenBondList" // added link for the greenbond table
+import InvestmentDetails from "views/admin/InvestmentDetails";
 
 class Admin extends React.Component {
   render() {
@@ -34,6 +37,9 @@ class Admin extends React.Component {
               <Route path="/admin/dashboard" exact component={MyDashboard} />
               <Route path="/admin/inbox" exact component={Inbox} />
               <Route path="/admin/greenbond" exact component={GreenBond} />
+              <Route path="/admin/investment" exact component={Investment} />
+              <Route path="/admin/greenbondlist" exact component={GreenBondList} />
+              <Route path="/admin/investment_page" exact component={InvestmentDetails} />
               <Redirect from="/admin" to="/admin/dashboard" />
             </Switch>
             <FooterAdmin/>

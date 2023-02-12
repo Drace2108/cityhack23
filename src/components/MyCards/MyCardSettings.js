@@ -50,22 +50,22 @@ export default class MyCardSettings extends React.Component {
 
   handleAsk(event) {
     this.setState({ askPressed: true, openBackdrop2: true });
-    // const formData = new FormData();
-    // formData.append("Question", this.state.sendText);
-    // axios({ method: "POST", url: `http://127.0.0.1:5000/question`, data: formData})
-    //   .then((res) => {
-    //     console.log(res.data.answer)
-    //     this.setState({receiveText: res.data.answer})
-    //   })
-    //   .catch((e) => {
-    //     console.log(e);
-    //   });
+    const formData = new FormData();
+    formData.append("Question", this.state.sendText);
+    axios({ method: "POST", url: `http://127.0.0.1:5000/question`, data: formData})
+      .then((res) => {
+        console.log(res.data.answer)
+        this.setState({receiveText: res.data.answer})
+      })
+      .catch((e) => {
+        console.log(e);
+      });
     setTimeout(
       function () {
         //Start the timer
         this.setState({ openBackdrop2: false });
       }.bind(this),
-      3000
+      5000
     );
   }
 
@@ -76,29 +76,29 @@ export default class MyCardSettings extends React.Component {
   handleSubmit(event) {
     this.setState({ appearTextfield: ((prev) => !prev) })
     this.setState({ openBackdrop: true });
-    // const formData = new FormData();
-    // formData.append("File", this.state.selectedFile);
+    const formData = new FormData();
+    formData.append("File", this.state.selectedFile);
 
-    // fetch("http://127.0.0.1:5000/uploadreport", {
-    //   method: "POST",
-    //   body: formData,
-    // })
-    //   .then((response) => {
-    //     console.log(response);  
-    //     response.json();
-    //   })
-    //   .catch((error) => {
-    //     console.error("Error:", error);
-    //     // event.preventDefault();
-    //     // this.props.history.push('/CompanyPage')
-    //   });
+    fetch("http://127.0.0.1:5000/uploadreport", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        console.log(response);  
+        response.json();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        // event.preventDefault();
+        // this.props.history.push('/CompanyPage')
+      });
 
     setTimeout(
       function () {
         //Start the timer
         this.setState({ isSubmitted: true, openBackdrop: false });
       }.bind(this),
-      3000
+      5000
     );
   }
 
@@ -113,7 +113,7 @@ export default class MyCardSettings extends React.Component {
   };
 
   handleSuggest1 = () => {
-    this.setState({theQuestion: "Is the company committed to net-zero carbon emmissions?"});
+    this.setState({theQuestion: "Is the company committed to net-zero carbon emmissions?", sendText: "Is the company committed to net-zero carbon emmissions?"});
   }
 
 

@@ -24,8 +24,8 @@ export default function MyCardStats({
               </span>
             </div>
             <div className="relative w-auto pl-4 flex-initial">
-              <div>
-                <img src={statIcon} alt="stat icon"/>
+              <div >
+                <img src={statIcon} alt="stat icon" style={{maxWidth:"70px"}}/> 
               </div>
             </div>
           </div>
@@ -50,16 +50,6 @@ export default function MyCardStats({
   );
 }
 
-MyCardStats.defaultProps = {
-  statSubtitle: "Traffic",
-  statTitle: "350,897",
-  statArrow: "up",
-  statPercent: "3.48",
-  statPercentColor: "text-emerald-500",
-  statDescripiron: "Since last month",
-  statIconName: "far fa-chart-bar",
-  statIconColor: "bg-red-500",
-};
 
 MyCardStats.propTypes = {
   statSubtitle: PropTypes.string,
