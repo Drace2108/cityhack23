@@ -15,6 +15,7 @@ import Charity from "views/admin/Charity.js";
 import CompanyPage from "views/admin/CompanyPage.js";
 import MyDashboard from "views/admin/MyDashboard";
 import Inbox from "views/admin/Inbox";
+import Investment from "views/admin/Investment";
 
 class Admin extends React.Component {
   render() {
@@ -32,6 +33,7 @@ class Admin extends React.Component {
               <Route path="/admin/company_page" exact component={CompanyPage} />
               <Route path="/admin/dashboard" exact component={MyDashboard} />
               <Route path="/admin/inbox" exact component={Inbox} />
+              <Route path="/admin/investment" exact component={Investment} />
               <Redirect from="/admin" to="/admin/dashboard" />
             </Switch>
             <FooterAdmin/>

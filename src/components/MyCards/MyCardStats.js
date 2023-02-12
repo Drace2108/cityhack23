@@ -24,8 +24,8 @@ export default function MyCardStats({
               </span>
             </div>
             <div className="relative w-auto pl-4 flex-initial">
-              <div>
-                <img src={statIcon} alt="stat icon"/>
+              <div >
+                <img src={statIcon} alt="stat icon"/> 
               </div>
             </div>
           </div>
