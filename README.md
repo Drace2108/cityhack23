@@ -40,6 +40,13 @@ Open another terminal session and run the following command, this will start the
 $ npm start
 ```
 
+To run backend server:
+- first do `cd backend`, 
+- create a virtual environment `python -m venv env`
+- install necessary packages `pip install -r requirements.txt`
+- run the backend `npm run start-backend`
+
+
 Open a terminal session and run the following command, this will start the server of our platform
 ```
 $ npm run start-backend

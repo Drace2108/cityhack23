@@ -65,7 +65,7 @@ export default class MyCardSettings extends React.Component {
         //Start the timer
         this.setState({ openBackdrop2: false });
       }.bind(this),
-      5000
+      15000
     );
   }
 

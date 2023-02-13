@@ -4,17 +4,17 @@ import PropTypes from "prop-types";
 // components
 
 const test_companies = [
-  {
-    name: "Apple",
-    ticker: "AAPL",
-    price: 308.26,
-    absChange: 2.81,
-    relChange: 0.7,
-    volume: 1200000,
-    avgVolume: 12312313,
-    marketCap: 122642462,
-    peratio: 0.7,
-  },
+  // {
+  //   name: "Apple",
+  //   ticker: "AAPL",
+  //   price: 308.26,
+  //   absChange: 2.81,
+  //   relChange: 0.7,
+  //   volume: 1200000,
+  //   avgVolume: 12312313,
+  //   marketCap: 122642462,
+  //   peratio: 0.7,
+  // },
 ];
 
 export default class MyCardTable extends React.Component {
